@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="jeimip.lab1.SeriesProductController"
+      spacing="10.0"
+      alignment="CENTER">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Enter the number of terms:"/>
+    <TextField fx:id="inputField" promptText="e.g. 10" maxWidth="150"/>
+    <Button text="Calculate" onAction="#onCalculate"/>
+    <TextFlow fx:id="resultTextFlow"
+              textAlignment="CENTER"
+              style="-fx-text-alignment: center; -fx-font-size: 18px;"
+              maxWidth="400"/>
+</VBox>

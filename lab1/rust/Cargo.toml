@@ -1,0 +1,9 @@
+[package]
+name = "lab1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.31.1"
+egui = "0.31.1"
+bytemuck_derive = "1.8.1"

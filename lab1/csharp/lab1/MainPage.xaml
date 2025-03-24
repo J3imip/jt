@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab1.MainPage"
+             BackgroundColor="#1E1E1E">
+
+    <Grid Padding="40"
+          RowDefinitions="Auto,Auto,Auto,Auto"
+          ColumnDefinitions="*"
+          VerticalOptions="Center"
+          HorizontalOptions="Center"
+          WidthRequest="400"
+          MaximumWidthRequest="500">
+
+        <Label Text="Enter the number of terms:"
+               FontSize="16"
+               TextColor="White"
+               Grid.Row="0" />
+
+        <Entry x:Name="InputEntry"
+               Placeholder="e.g. 10"
+               Keyboard="Numeric"
+               FontSize="16"
+               Grid.Row="1"
+               BackgroundColor="#333"
+               TextColor="White" />
+
+        <Button Text="Calculate"
+                Clicked="OnCalculateClicked"
+                FontSize="16"
+                Grid.Row="2"
+                BackgroundColor="#B69DF8"
+                TextColor="Black"
+                CornerRadius="6"
+                Margin="0,10,0,0" />
+
+        <Label x:Name="ResultLabel"
+               Text="Result will appear here"
+               FontSize="18"
+               TextColor="White"
+               HorizontalOptions="Center"
+               Grid.Row="3"
+               Margin="0,10,0,0" />
+    </Grid>
+</ContentPage>
